@@ -1,0 +1,173 @@
+@using System.Web.Optimization
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KOPERASI KARYAWAN PT. FREIGHT EXPRESS INDONESIA GROUP</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+		<link rel="shortcut icon" type="image/x-icon" href="~/content/header/image/favicon.ico">
+		<link href="~/content/header/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="~/content/header/css/fontello.css" rel="stylesheet" type="text/css">
+		<link href="~/content/header/css/flexslider.css" rel="stylesheet" type="text/css">
+        
+        <!--
+		<link href="js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
+        -->
+
+		<link href="~/content/header/css/owl.carousel.css" rel="stylesheet" type="text/css">
+		<link href="~/content/header/css/responsive-calendar.css" rel="stylesheet" type="text/css">
+		<link href="~/content/header/css/chosen.css" rel="stylesheet" type="text/css">
+
+        <!--
+		<link href="jackbox/css/jackbox.min.css" rel="stylesheet" type="text/css" />
+        -->
+
+		<link href="~/content/header/css/cloud-zoom.css" rel="stylesheet" type="text/css" />
+		<link href="~/content/header/css/colorpicker.css" rel="stylesheet" type="text/css">
+		<link href="~/content/header/css/style.css" rel="stylesheet" type="text/css">
+
+    @Styles.Render("~/content/css")
+
+		<!--[if IE 9]>
+			<link rel="stylesheet" href="css/ie9.css">
+		<![endif]-->
+		<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<link href="css/jackbox-ie8.css" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+		<!--[if gt IE 8]>
+			<link href="css/jackbox-ie9.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/fontello-ie7.css">
+		<![endif]-->
+		<style type="text/css">
+			.no-fouc {display:none;}
+	  	</style>
+
+		<!-- jQuery -->
+        @Scripts.Render("~/bundles/jquery")
+
+		<!-- Preloader -->
+		<script src="~/scripts/header/jquery.queryloader2.min.js"></script>
+
+		<script type="text/javascript">
+		    $('html').addClass('no-fouc');
+		    $(document).ready(function(){
+		        $('html').show();
+
+			    //var window_w = $(window).width();
+			    //var window_h = $(window).height();
+			    //var window_s = $(window).scrollTop();
+		    });
+
+            var base_url = '@Url.Content("~//")';
+		</script>
+
+		<script src="~/scripts/header/sss.min.js"></script>
+
+		<link rel="stylesheet" href="~/content/header/css/sss.css" type="text/css" media="all">
+
+		<script>jQuery(function($) {$('.slider').sss();});</script>
+	</head>
+
+	<body class="tablet-sticky-header ">
+
+        @RenderSection("head", required: false)
+        	
+			<div class="container">
+				<header id="header" class="animate-onscroll">
+					<div id="main-header">
+						<div class="container">
+						<div class="row">
+							<div id="logo" class="col-lg-6 col-md-6 col-sm-6">
+								<a href="main-v1.html" target="_blank">
+                                    <img src="~/content/header/image/logo-koperasi.png" alt="Logo" height="82px">
+                                    <img src="~/content/header/image/logokopkar.png" alt="Logo" height="82px">
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 main-quote">
+								<h2><b>Koperasi Karyawan<br />
+								PT. FREIGHT EXPRESS INDONESIA GROUP</b></h2>
+							</div>
+						</div>
+						</div>
+					</div>
+				</header>
+			</div>
+
+        <div style="min-height:300px">
+
+	@RenderBody()
+
+        </div>
+
+
+			<footer id="footer">
+				<div id="main-footer">
+					<div class="row">
+						<div align="center" class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							<p><img src="~/content/header/image/logokopkar.png" alt="Logo" width="200px"></p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							<p>&nbsp;</p>
+							<h4>Koperasi Karyawan</h4>
+							<ul>
+								<li>4th Floor FEI Building</li>
+								<li>Jl. Mayjend Sungkono No. 204</li>
+								<li>Surabaya, 60225 - Indonesia</li>
+								<li>P. +6231-561-6465</li>
+								<li>F. +6231-561-9177</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="lower-footer">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 animate-onscroll">
+							<p class="copyright">©2017 Koperasi Karyawan PT. FEI Group. All Rights Reserved. Design By <a href="http://www.solusisentraldata.com">PT Solusi Sentral Data</a>.</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		<script type="text/javascript" src="~/scripts/header/bootstrap.min.js"></script>
+		<script type="text/javascript" src="~/scripts/header/modernizr.js"></script>
+		<script type="text/javascript" src="~/scripts/header/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="~/scripts/header/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="~/scripts/header/revolution-slider/js/jquery.themepunch.plugins.min.js"></script>
+		<script type="text/javascript" src="~/scripts/header/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="~/scripts/header/responsive-calendar.min.js"></script>
+		<script type="text/javascript" src="~/scripts/header/jquery.raty.min.js"></script>
+		<script type="text/javascript" src="~/scripts/header/chosen.jquery.min.js"></script>
+		<script type="text/javascript" src="~/scripts/header/jflickrfeed.min.js"></script>
+		<script type="text/javascript" src="~/scripts/header/instafeed.min.js"></script>
+
+        <!--
+		<script type="text/javascript" src="php/twitter/jquery.tweet.js"></script>
+        -->
+
+		<script type="text/javascript" src="~/scripts/header/jquery.mixitup.js"></script>
+
+        <!--
+		<script type="text/javascript" src="jackbox/js/jackbox-packed.min.js"></script>
+        -->
+
+		<script type="text/javascript" src="~/scripts/header/zoomsl-3.0.min.js"></script>
+		<script type="text/javascript" src="~/scripts/header/colorpicker.js"></script>
+        
+        <!--
+		<script type="text/javascript" src="~/scripts/header/script.js"></script>
+        -->
+
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+			<script type="text/javascript" src="js/script_ie.js"></script>
+		<![endif]-->
+	</body>
+</html>

@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "ChangePass";
+    Layout = "~/Views/Shared/_header.cshtml";
+}
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="~/Content/user/css/normalize.min.css">
+    <link href="~/Content/user/css/user_style.css" rel="stylesheet" type="text/css">
+
+    <script src="~/Content/user/scripts/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <div id="badan" class="login">
+        <h4>CHANGE PASSWORD</h4>
+        @using (Html.BeginForm())
+        {                     
+            <div style="width:100vw; text-align:center;color:#a82512"><h4>@Html.ValidationMessage("1")</h4></div>
+            <table class="tbl">
+                <tr>
+                    <td style="min-width:160px"> Nomer Anggota</td>
+                    <td>
+                        <input id="txt_pelanggan" style="color:black; height:30px !important; width:200px !important" 
+                            type="text" name="no_anggota" value= "@koperasi.Models.ConfigModels.GetNoAnggota()" disabled/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width:160px">Password Lama</td>
+                    <td><input type="password" placeholder="Password Lama" required="required" name="password" id="pass_lama"></td>
+                    <td colspan="3" ><div style="width:250px" class="error"> @Html.ValidationMessage("2")</div></td>
+                </tr>
+                <tr>
+                    <td style="min-width:160px">Password Baru</td>
+                    <td><input type="password" placeholder="Password Baru" required="required" name="password2" id="pass_baru"></td>
+                    <td style="min-width:200px">Konfirmasi Password</td>
+                    <td><input style="min-width:200px" type="password" placeholder="Konfirmasi Password" required="required" name="keterangan" id="konf_pass"></td>
+                    <td style="text-align:left !important">
+                        <div class="error"> @Html.ValidationMessage("3")</div>
+                    </td>
+                </tr>            
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><button id="btnSubmit" type="submit" class="btn btn-primary btn-block btn-large">Submit Password</button></td>
+                    <td></td>
+                </tr>            
+            </table>
+        }
+    </div>
+</body>

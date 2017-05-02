@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "ListPerCompany";
+    Layout = "~/Views/Shared/_header.cshtml";
+}
+
+@section Head {
+	<style type="text/css">
+	.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+	.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+	.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#959799;}
+	</style>		
+}
+	<script type="text/javascript">
+        
+		$(document).ready(function(){
+		
+		    $("#tbl_pinjaman td").parent().remove();
+
+		    InsertHtmlTable();
+
+			function InsertHtmlTable() {
+
+			    jQuery.ajax({
+			        type: "POST",
+			        url: base_url + '/pelanggan/GetHutangListByCompany',
+			        dataType: 'json',
+
+			        success: function (dataHasil) {
+			            var trHTML = '';
+
+			            $.each(dataHasil, function (i, value) {
+			                var datestring = "";
+			                var vAngKe = 0;
+			                if (value.tgl_registrasi) {
+			                    var d = new Date(value.tgl_registrasi);
+			                    datestring = ("0" + d.getDate()).slice(-2) + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + d.getFullYear();
+			                    vAngKe = Math.ceil((value.batas_kredit - value.sisa_pinjaman) / value.pokok_per_bulan);
+			                }
+
+			                trHTML += '<tr><td style="text-align:left">' + value.nama +
+                                      '</td><td style="text-align:right">' + addCommas(value.simpanan_wajib) +
+                                      '</td><td style="text-align:right">' + addCommas(value.simpanan_tmk) +
+                                      '</td><td style="text-align:right">' + addCommas(value.batas_kredit) +
+                                      '</td><td style="text-align:center">' + datestring +
+                                      '</td><td style="text-align:center">' + value.jangka_waktu +
+                                      '</td><td style="text-align:center">' + vAngKe +
+                                      '</td><td style="text-align:right">' + addCommas(value.angsuran_per_bulan) +
+                                      '</td><td style="text-align:right">' + addCommas(value.sisa_pinjaman) +'</td></tr>';
+
+			            });
+			            $('#tbl_pinjaman').append(trHTML);
+			        }
+			    });
+			}
+
+
+			var vTgl =  new Date($('#tgl_registrasi').val());			
+			$('#tgl_registrasi').val(formatDate(vTgl));
+
+			function addCommas(nStr) {
+			    nStr += '';
+			    x = nStr.split('.');
+			    x1 = x[0];
+			    x2 = x.length > 1 ? '.' + x[1] : '';
+			    var rgx = /(\d+)(\d{3})/;
+			    while (rgx.test(x1)) {
+			        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+			    }
+			    return x1 + x2;
+			}
+
+			function formatDate(date) {
+			    var monthNames = [
+                  "Jan", "Feb", "Mar",
+                  "Apr", "May", "Jun", "Jul",
+                  "Aug", "Sep", "Oct",
+                  "Nov", "Dec"
+			    ];
+
+			    var day = date.getDate();
+			    var monthIndex = date.getMonth();
+			    var year = date.getFullYear();
+
+			    return day + ' ' + monthNames[monthIndex] + ' ' + year;
+			}
+		});
+		
+	</script>		
+		<!-- Container -->
+
+    <div>
+		<table class="tg" id="tbl_pinjaman" >
+			<tr>
+			    <th style="text-align:center;width:200px">NAMA</th>
+			    <th style="text-align:center;width:120px">JML SIMPANAN <br> WAJIB</th>
+                <th style="text-align:center;width:120px">JML SIMPANAN <br> TMK</th>
+			    <th style="text-align:center;width:120px">TOTAL PINJAMAN</th>
+                <th style="text-align:center;width:120px">TGL. PINJAM</th>
+			    <th style="text-align:center;width:80px">PERIODE <br>(BLN)</th>
+                <th style="text-align:center;width:80px">ANGSURAN <br>BLN KE</th>
+			    <th style="text-align:center;width:120px">ANGSURAN <br> (BLN)</th>
+			    <th style="text-align:center;width:120px">SISA HUTANG</th>
+			</tr>
+		</table>
+	</div>	
+

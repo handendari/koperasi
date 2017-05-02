@@ -1,0 +1,28 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Koperasi</title>
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+
+    @Styles.Render("~/content/css")
+    @Scripts.Render("~/bundles/jquery")
+
+    <script type="text/javascript">
+        var base_url = '@Url.Content("~//")';
+    </script>
+    
+</head>
+<body>
+        @RenderSection("head", required: false)
+    header
+
+        @RenderBody()
+
+    footer
+</body>
+</html>

@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewBag.Title = "PinjamanAnggota";
+    Layout = "~/Views/Shared/_header.cshtml";
+}
+
+@model koperasi.Models.anggotaModels
+
+@section Head {
+	<style type="text/css">
+	.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+	.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+	.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#959799;}
+	</style>		
+}
+	<script type="text/javascript">
+        
+		$(document).ready(function(){
+		
+		    $("#tbl_pinjaman td").parent().remove();
+
+		    InsertHtmlTable();
+
+			function InsertHtmlTable() {
+			    //var vNoPelanggan = $("#txt_pelanggan").val();
+
+			    jQuery.ajax({
+			        type: "POST",
+			        url: base_url + '/pelanggan/GetPelangganList',
+			        dataType: 'json',
+			      //  data: { kdPelanggan: vNoPelanggan },
+
+			        success: function (dataHasil) {
+			            var trHTML = '';
+
+			            $.each(dataHasil, function (i, value) {
+			                //alert(value.nama);
+			                //$('#nama_pelanggan').val(value.nama);
+			                //$('#kode_pelanggan').val(addCommas(value.simpanan_wajib));
+			                //$('#alamat_pelanggan').val(value.alamat);
+			                //$('#nama_pelanggan').val(value.nama);
+			                //$('#simpanan_tmk').val(addCommas(value.simpanan_tmk));
+
+			                var d = new Date(value.tgl_registrasi);
+
+			                var datestring = ("0" + d.getDate()).slice(-2) + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + d.getFullYear();
+
+			                trHTML += '<tr><td style="text-align:center">' + value.id +
+                                      '</td><td style="text-align:center">' + value.no_trans +
+                                      '</td><td style="text-align:center">' + datestring +
+                                      '</td><td style="text-align:right">' + addCommas(value.batas_kredit) +
+                                      '</td><td style="text-align:center">' + value.persen_bunga +
+                                      '</td><td style="text-align:center">' + value.jangka_waktu +
+                                      '</td><td style="text-align:center">' + Math.ceil((value.batas_kredit - value.sisa_pinjaman)/value.pokok_per_bulan) +
+                                      '</td><td style="text-align:right">' + addCommas(value.bunga_per_bulan) +
+                                      '</td><td style="text-align:right">' + addCommas(value.pokok_per_bulan) +
+                                      '</td><td style="text-align:right">' + addCommas(value.sisa_pinjaman) +
+                                      '</td><td style="text-align:right">' + addCommas(value.angsuran_per_bulan) + '</td></tr>';
+
+			            });
+			            $('#tbl_pinjaman').append(trHTML);
+			        }
+			    });
+			}
+
+			$('#simpanan_tmk').val(addCommas($('#simpanan_tmk').val()));
+			$('#simpanan_wjb').val(addCommas($('#simpanan_wjb').val()));
+
+			var vTgl =  new Date($('#tgl_registrasi').val());			
+			$('#tgl_registrasi').val(formatDate(vTgl));
+
+			function addCommas(nStr) {
+			    nStr += '';
+			    x = nStr.split('.');
+			    x1 = x[0];
+			    x2 = x.length > 1 ? '.' + x[1] : '';
+			    var rgx = /(\d+)(\d{3})/;
+			    while (rgx.test(x1)) {
+			        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+			    }
+			    return x1 + x2;
+			}
+
+			function formatDate(date) {
+			    var monthNames = [
+                  "Jan", "Feb", "Mar",
+                  "Apr", "May", "Jun", "Jul",
+                  "Aug", "Sep", "Oct",
+                  "Nov", "Dec"
+			    ];
+
+			    var day = date.getDate();
+			    var monthIndex = date.getMonth();
+			    var year = date.getFullYear();
+
+			    return day + ' ' + monthNames[monthIndex] + ' ' + year;
+			}
+		});
+		
+	</script>		
+		<!-- Container -->
+
+
+    <div id="div_hasil">
+        <table class="tbl">
+            <tr>
+                <td style="width:160px"> Nomer Anggota</td>
+                <td style="text-align:left">
+                    <input id="txt_pelanggan" style="height:30px !important; width:200px !important" 
+                        type="text" value= "@koperasi.Models.ConfigModels.GetNoAnggota()" disabled/>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Nama Anggota</label></td>
+                <td style="text-align:left">
+                    <input type="text" style="width:300px" id="nama_pelanggan" value="@Model.nama_anggota" disabled>
+                </td>
+
+                <td style="text-align:right">
+                    <label>Alamat</label>
+                </td>
+                <td>
+                    <input style="width:300px" type="text" id="alamat_pelanggan" value="@Model.alamat" disabled>
+                </td>
+                <td>
+                    <input style="width:200px" type="text" id="kota" value="@Model.kota" disabled>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Tgl Registrasi</label></td>
+                <td style="text-align:left">
+                    <input type="text" style="width:200px" id="tgl_registrasi" value="@Model.tgl_registrasi" disabled>
+                </td>
+
+                <td style="text-align:right">
+                    <label>Nama kantor</label>
+                </td>
+                <td>
+                    <input style="width:300px" type="text" id="kantor" value="@Model.kantor" disabled>
+                </td>
+            </tr>
+
+            <tr>
+                <td ><label>Jml Simpanan Wajib</label></td>
+                <td style="text-align:left">
+                    <input type="text" id="simpanan_wjb" style="text-align:right; width:200px" value="@Model.simpanan_wajib" disabled>
+                </td>
+                <td style="text-align:right"><label>Jml Simpanan TMK</label></td>
+                <td style="text-align:left;width:250px">
+                    <input style="text-align:right;width:200px" type="text" id="simpanan_tmk" value="@Model.simpanan_tmk" disabled>
+                </td>
+            </tr>
+        </table>
+
+		<table class="tg" id="tbl_pinjaman" >
+			<tr>
+			<th style="text-align:center;width:70px">ID</th>
+			<th style="text-align:center;width:150px">NO. PINJAM</th>
+			<th style="text-align:center">TGL. PINJAM</th>
+			<th style="text-align:center">TOTAL PINJAMAN</th>
+			<th style="text-align:center">BUNGA <br>(%)</th>
+			<th style="text-align:center">PERIODE <br>(BLN)</th>
+            <th style="text-align:center">ANGSURAN <br>BLN KE</th>
+			<th style="text-align:center;width:100px">BUNGA <br> (Rp/bln)</th>
+			<th style="text-align:center">POKOK ANGSURAN <br> (BLN)</th>
+			<th style="text-align:center">SISA HUTANG</th>
+			<th style="text-align:center">ANGSURAN <br> (BLN)</th>
+			</tr>
+		</table>
+	</div>	
+ 

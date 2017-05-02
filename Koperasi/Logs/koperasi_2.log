@@ -1,0 +1,272 @@
+ERROR 2017-03-08 16:04:53,139   824ms Pelanggan              GetPelangganList   - 3/8/2017 4:04:53 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): Could not find installable ISAM.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 36
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:04:53,658  1343ms PelangganController    GetPelangganList   - 3/8/2017 4:04:53 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:06:56,202   858ms Pelanggan              GetPelangganList   - 3/8/2017 4:06:56 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): Could not find installable ISAM.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 36
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:06:56,688  1344ms PelangganController    GetPelangganList   - 3/8/2017 4:06:56 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:08:22,891   779ms Pelanggan              GetPelangganList   - 3/8/2017 4:08:22 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): Could not find installable ISAM.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 36
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:08:23,313  1201ms PelangganController    GetPelangganList   - 3/8/2017 4:08:23 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:18:41,162   868ms Pelanggan              GetPelangganList   - 3/8/2017 4:18:41 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80040E4D): Cannot start your application. The workgroup information file is missing or opened exclusively by another user.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 47
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:18:41,624  1330ms PelangganController    GetPelangganList   - 3/8/2017 4:18:41 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:19:03,357 23063ms Pelanggan              GetPelangganList   - 3/8/2017 4:19:03 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80040E4D): Cannot start your application. The workgroup information file is missing or opened exclusively by another user.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 47
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:19:03,360 23066ms PelangganController    GetPelangganList   - 3/8/2017 4:19:03 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:19:05,416 25122ms Pelanggan              GetPelangganList   - 3/8/2017 4:19:05 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80040E4D): Cannot start your application. The workgroup information file is missing or opened exclusively by another user.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 47
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:19:05,418 25124ms PelangganController    GetPelangganList   - 3/8/2017 4:19:05 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:19:06,213 25919ms Pelanggan              GetPelangganList   - 3/8/2017 4:19:06 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80040E4D): Cannot start your application. The workgroup information file is missing or opened exclusively by another user.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 47
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:19:06,215 25921ms PelangganController    GetPelangganList   - 3/8/2017 4:19:06 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:21:01,072   808ms Pelanggan              GetPelangganList   - 3/8/2017 4:21:01 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): You do not have the necessary permissions to use the 'D:\KOPKAR\DBKopKar.mdb' object.  Have your system administrator or the person who created this object establish the appropriate permissions for you.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 47
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:21:01,500  1235ms PelangganController    GetPelangganList   - 3/8/2017 4:21:01 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:24:52,292 232027ms Pelanggan              GetPelangganList   - 3/8/2017 4:24:52 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): You do not have the necessary permissions to use the 'D:\KOPKAR\DBKopKar.mdb' object.  Have your system administrator or the person who created this object establish the appropriate permissions for you.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 47
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:24:52,296 232031ms PelangganController    GetPelangganList   - 3/8/2017 4:24:52 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:24:54,924 234659ms Pelanggan              GetPelangganList   - 3/8/2017 4:24:54 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): You do not have the necessary permissions to use the 'D:\KOPKAR\DBKopKar.mdb' object.  Have your system administrator or the person who created this object establish the appropriate permissions for you.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 47
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:24:54,926 234661ms PelangganController    GetPelangganList   - 3/8/2017 4:24:54 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:25:43,016 282751ms Pelanggan              GetPelangganList   - 3/8/2017 4:25:43 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): You do not have the necessary permissions to use the 'D:\KOPKAR\DBKopKar.mdb' object.  Have your system administrator or the person who created this object establish the appropriate permissions for you.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 47
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:25:43,018 282753ms PelangganController    GetPelangganList   - 3/8/2017 4:25:43 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:34:37,507   807ms Pelanggan              GetPelangganList   - 3/8/2017 4:34:37 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): You do not have the necessary permissions to use the 'D:\KOPKAR\DBKopKar.mdb' object.  Have your system administrator or the person who created this object establish the appropriate permissions for you.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 46
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:34:37,930  1230ms PelangganController    GetPelangganList   - 3/8/2017 4:34:37 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:35:26,291   331ms Pelanggan              GetPelangganList   - 3/8/2017 4:35:26 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80040E4D): Cannot start your application. The workgroup information file is missing or opened exclusively by another user.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 46
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:35:26,767   806ms PelangganController    GetPelangganList   - 3/8/2017 4:35:26 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:43:22,197   802ms Pelanggan              GetPelangganList   - 3/8/2017 4:43:22 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): Could not find installable ISAM.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 48
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:43:22,681  1285ms PelangganController    GetPelangganList   - 3/8/2017 4:43:22 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:46:28,636  1114ms Pelanggan              GetPelangganList   - 3/8/2017 4:46:28 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): You do not have the necessary permissions to use the 'D:\KOPKAR\DBKopKar.mdb' object.  Have your system administrator or the person who created this object establish the appropriate permissions for you.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 48
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:46:29,319  1798ms PelangganController    GetPelangganList   - 3/8/2017 4:46:29 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:48:44,112  1033ms Pelanggan              GetPelangganList   - 3/8/2017 4:48:44 PM GetPelangganList ====>>>>>> 
+System.InvalidCastException: Specified cast is not valid.
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 53
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:48:44,189  1110ms PelangganController    GetPelangganList   - 3/8/2017 4:48:44 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 16:50:07,704 84625ms Pelanggan              GetPelangganList   - 3/8/2017 4:50:07 PM GetPelangganList ====>>>>>> 
+System.InvalidCastException: Specified cast is not valid.
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 53
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 16:50:07,707 84628ms PelangganController    GetPelangganList   - 3/8/2017 4:50:07 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 17:08:38,392   764ms Pelanggan              GetPelangganList   - 3/8/2017 5:08:38 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): The Microsoft Jet database engine cannot open the file ''.  It is already opened exclusively by another user, or you need permission to view its data.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 47
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 17:08:38,896  1268ms PelangganController    GetPelangganList   - 3/8/2017 5:08:38 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 17:15:52,352   733ms Pelanggan              GetPelangganList   - 3/8/2017 5:15:52 PM GetPelangganList ====>>>>>> 
+System.Data.OleDb.OleDbException (0x80004005): The Microsoft Jet database engine cannot open the file ''.  It is already opened exclusively by another user, or you need permission to view its data.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 47
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 17:15:52,877  1258ms PelangganController    GetPelangganList   - 3/8/2017 5:15:52 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+ERROR 2017-03-08 17:16:29,969   782ms Pelanggan              GetPelangganList   - 3/8/2017 5:16:29 PM GetPelangganList ====>>>>>> 
+System.InvalidCastException: Specified cast is not valid.
+   at koperasi.Repositories.PelangganRepo.GetListPelanggan(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Repositories\PelangganRepo.cs:line 52
+   at koperasi.Services.pelangganService.GetPelangganList(String kdPelanggan) in d:\Koperasi\Koperasi\koperasi\Services\pelangganService.cs:line 27
+DEBUG 2017-03-08 17:16:30,379  1192ms PelangganController    GetPelangganList   - 3/8/2017 5:16:30 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+DEBUG 2017-03-08 17:22:07,008   849ms Pelanggan              GetListPelanggan   - 3/8/2017 5:22:06 PM GetPelangganController ====>>>>>> Jumlah Data : 3
+DEBUG 2017-03-08 17:22:07,466  1307ms PelangganController    GetPelangganList   - 3/8/2017 5:22:07 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+DEBUG 2017-03-08 17:24:35,718   745ms Pelanggan              GetListPelanggan   - 3/8/2017 5:24:35 PM GetPelangganController ====>>>>>> Jumlah Data : 3
+DEBUG 2017-03-08 17:24:36,211  1237ms PelangganController    GetPelangganList   - 3/8/2017 5:24:36 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+DEBUG 2017-03-08 17:26:14,289   785ms Pelanggan              GetListPelanggan   - 3/8/2017 5:26:14 PM GetPelangganREPO ====>>>>>> Jumlah Data : 3
+DEBUG 2017-03-08 17:26:14,737  1232ms PelangganController    GetPelangganList   - 3/8/2017 5:26:14 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+DEBUG 2017-03-08 17:36:29,068   730ms Pelanggan              GetListPelanggan   - 3/8/2017 5:36:29 PM GetPelangganREPO ====>>>>>> Jumlah Data : 3
+DEBUG 2017-03-08 17:36:29,532  1194ms PelangganController    GetPelangganList   - 3/8/2017 5:36:29 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+DEBUG 2017-03-08 17:42:27,752   745ms Pelanggan              GetListPelanggan   - 3/8/2017 5:42:27 PM GetPelangganREPO ====>>>>>> Jumlah Data : 3
+DEBUG 2017-03-08 17:42:28,209  1202ms PelangganController    GetPelangganList   - 3/8/2017 5:42:28 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+DEBUG 2017-03-08 17:43:50,558   806ms PelangganREPO          GetListPelanggan   - 3/8/2017 5:43:50 PM GetPelangganREPO ====>>>>>> Jumlah Data : 3
+DEBUG 2017-03-08 17:43:51,196  1444ms PelangganController    GetPelangganList   - 3/8/2017 5:43:51 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+DEBUG 2017-03-08 17:45:30,764   725ms PelangganREPO          GetListPelanggan   - 3/8/2017 5:45:30 PM GetPelangganREPO ====>>>>>> Jumlah Data : 3
+DEBUG 2017-03-08 17:45:30,826   787ms PelangganREPO          GetListPelanggan   - 3/8/2017 5:45:30 PM GetPelangganREPO ====>>>>>> Jumlah LIST : 0
+DEBUG 2017-03-08 17:45:31,229  1190ms PelangganController    GetPelangganList   - 3/8/2017 5:45:31 PM GetPelangganList ====>>>>>> Jumlah Data : 0
+DEBUG 2017-03-08 17:55:02,682   748ms PelangganREPO          GetListPelanggan   - 3/8/2017 5:55:02 PM GetPelangganREPO ====>>>>>> Jumlah Data : 3
+DEBUG 2017-03-08 17:55:02,738   804ms PelangganREPO          GetListPelanggan   - 3/8/2017 5:55:02 PM READER READ >>>>>> False
+DEBUG 2017-03-08 17:55:02,739   805ms PelangganREPO          GetListPelanggan   - 3/8/2017 5:55:02 PM GetPelangganREPO ====>>>>>> Jumlah LIST : 0
+DEBUG 2017-03-08 17:55:03,145  1211ms PelangganController    GetPelangganList   - 3/8/2017 5:55:03 PM GetPelangganList ====>>>>>> Jumlah Data : 0
